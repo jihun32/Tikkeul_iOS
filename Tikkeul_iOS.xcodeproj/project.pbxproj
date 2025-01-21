@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CA907BF82D3F67E4003833E7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CA907BF72D3F67E4003833E7 /* .gitignore */; };
+		CA907C5F2D3F6E5C003833E7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA907C5E2D3F6E5C003833E7 /* ComposableArchitecture */; };
+		CA907C612D3F6E7D003833E7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA907C602D3F6E7D003833E7 /* ComposableArchitecture */; };
+		CA907C632D3F6E91003833E7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA907C622D3F6E91003833E7 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA907C5F2D3F6E5C003833E7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA907C612D3F6E7D003833E7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA907C632D3F6E91003833E7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +124,7 @@
 			);
 			name = Tikkeul_iOS;
 			packageProductDependencies = (
+				CA907C5E2D3F6E5C003833E7 /* ComposableArchitecture */,
 			);
 			productName = Tikkeul_iOS;
 			productReference = CA907BC32D3F60A6003833E7 /* Tikkeul_iOS.app */;
@@ -141,6 +148,7 @@
 			);
 			name = Tikkeul_iOSTests;
 			packageProductDependencies = (
+				CA907C602D3F6E7D003833E7 /* ComposableArchitecture */,
 			);
 			productName = Tikkeul_iOSTests;
 			productReference = CA907BD82D3F60A9003833E7 /* Tikkeul_iOSTests.xctest */;
@@ -164,6 +172,7 @@
 			);
 			name = Tikkeul_iOSUITests;
 			packageProductDependencies = (
+				CA907C622D3F6E91003833E7 /* ComposableArchitecture */,
 			);
 			productName = Tikkeul_iOSUITests;
 			productReference = CA907BE22D3F60A9003833E7 /* Tikkeul_iOSUITests.xctest */;
@@ -201,6 +210,9 @@
 			);
 			mainGroup = CA907BBA2D3F60A6003833E7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CA907BC42D3F60A6003833E7 /* Products */;
 			projectDirPath = "";
@@ -565,6 +577,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.17.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA907C5E2D3F6E5C003833E7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		CA907C602D3F6E7D003833E7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		CA907C622D3F6E91003833E7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA907BBB2D3F60A6003833E7 /* Project object */;
 }
