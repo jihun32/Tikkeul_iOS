@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CA907BF82D3F67E4003833E7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CA907BF72D3F67E4003833E7 /* .gitignore */; };
+		CA907C5F2D3F6E5C003833E7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA907C5E2D3F6E5C003833E7 /* ComposableArchitecture */; };
+		CA907C612D3F6E7D003833E7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA907C602D3F6E7D003833E7 /* ComposableArchitecture */; };
+		CA907C632D3F6E91003833E7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA907C622D3F6E91003833E7 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,20 +37,42 @@
 		CA907BF72D3F67E4003833E7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CA907C6E2D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Test/Tikkeul_iOSTests/Tikkeul_iOSTests.swift,
+				Test/Tikkeul_iOSUITests/Tikkeul_iOSUITests.swift,
+				Test/Tikkeul_iOSUITests/Tikkeul_iOSUITestsLaunchTests.swift,
+			);
+			target = CA907BC22D3F60A6003833E7 /* Tikkeul_iOS */;
+		};
+		CA907C6F2D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Test/Tikkeul_iOSTests/Tikkeul_iOSTests.swift,
+			);
+			target = CA907BD72D3F60A9003833E7 /* Tikkeul_iOSTests */;
+		};
+		CA907C702D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOSUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Test/Tikkeul_iOSUITests/Tikkeul_iOSUITests.swift,
+				Test/Tikkeul_iOSUITests/Tikkeul_iOSUITestsLaunchTests.swift,
+			);
+			target = CA907BE12D3F60A9003833E7 /* Tikkeul_iOSUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CA907BC52D3F60A6003833E7 /* Tikkeul_iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CA907C6E2D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOS" target */,
+				CA907C6F2D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOSTests" target */,
+				CA907C702D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOSUITests" target */,
+			);
 			path = Tikkeul_iOS;
-			sourceTree = "<group>";
-		};
-		CA907BDB2D3F60A9003833E7 /* Tikkeul_iOSTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Tikkeul_iOSTests;
-			sourceTree = "<group>";
-		};
-		CA907BE52D3F60A9003833E7 /* Tikkeul_iOSUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Tikkeul_iOSUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -57,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA907C5F2D3F6E5C003833E7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA907C612D3F6E7D003833E7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA907C632D3F6E91003833E7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +110,6 @@
 			children = (
 				CA907BF72D3F67E4003833E7 /* .gitignore */,
 				CA907BC52D3F60A6003833E7 /* Tikkeul_iOS */,
-				CA907BDB2D3F60A9003833E7 /* Tikkeul_iOSTests */,
-				CA907BE52D3F60A9003833E7 /* Tikkeul_iOSUITests */,
 				CA907BC42D3F60A6003833E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,12 +138,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				CA907C882D3F7E4F003833E7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CA907BC52D3F60A6003833E7 /* Tikkeul_iOS */,
 			);
 			name = Tikkeul_iOS;
 			packageProductDependencies = (
+				CA907C5E2D3F6E5C003833E7 /* ComposableArchitecture */,
 			);
 			productName = Tikkeul_iOS;
 			productReference = CA907BC32D3F60A6003833E7 /* Tikkeul_iOS.app */;
@@ -136,11 +164,9 @@
 			dependencies = (
 				CA907BDA2D3F60A9003833E7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				CA907BDB2D3F60A9003833E7 /* Tikkeul_iOSTests */,
-			);
 			name = Tikkeul_iOSTests;
 			packageProductDependencies = (
+				CA907C602D3F6E7D003833E7 /* ComposableArchitecture */,
 			);
 			productName = Tikkeul_iOSTests;
 			productReference = CA907BD82D3F60A9003833E7 /* Tikkeul_iOSTests.xctest */;
@@ -159,11 +185,9 @@
 			dependencies = (
 				CA907BE42D3F60A9003833E7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				CA907BE52D3F60A9003833E7 /* Tikkeul_iOSUITests */,
-			);
 			name = Tikkeul_iOSUITests;
 			packageProductDependencies = (
+				CA907C622D3F6E91003833E7 /* ComposableArchitecture */,
 			);
 			productName = Tikkeul_iOSUITests;
 			productReference = CA907BE22D3F60A9003833E7 /* Tikkeul_iOSUITests.xctest */;
@@ -201,6 +225,10 @@
 			);
 			mainGroup = CA907BBA2D3F60A6003833E7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				CA907C862D3F72B6003833E7 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CA907BC42D3F60A6003833E7 /* Products */;
 			projectDirPath = "";
@@ -272,6 +300,10 @@
 			isa = PBXTargetDependency;
 			target = CA907BC22D3F60A6003833E7 /* Tikkeul_iOS */;
 			targetProxy = CA907BE32D3F60A9003833E7 /* PBXContainerItemProxy */;
+		};
+		CA907C882D3F7E4F003833E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = CA907C872D3F7E4F003833E7 /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -565,6 +597,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.17.1;
+			};
+		};
+		CA907C862D3F72B6003833E7 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.58.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA907C5E2D3F6E5C003833E7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		CA907C602D3F6E7D003833E7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		CA907C622D3F6E91003833E7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		CA907C872D3F7E4F003833E7 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA907C862D3F72B6003833E7 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA907BBB2D3F60A6003833E7 /* Project object */;
 }
