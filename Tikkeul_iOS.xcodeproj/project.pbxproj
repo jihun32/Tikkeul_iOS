@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CA907BF82D3F67E4003833E7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CA907BF72D3F67E4003833E7 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CA907BD92D3F60A9003833E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		CA907BC32D3F60A6003833E7 /* Tikkeul_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tikkeul_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA907BD82D3F60A9003833E7 /* Tikkeul_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tikkeul_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA907BE22D3F60A9003833E7 /* Tikkeul_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tikkeul_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA907BF72D3F67E4003833E7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		CA907BBA2D3F60A6003833E7 = {
 			isa = PBXGroup;
 			children = (
+				CA907BF72D3F67E4003833E7 /* .gitignore */,
 				CA907BC52D3F60A6003833E7 /* Tikkeul_iOS */,
 				CA907BDB2D3F60A9003833E7 /* Tikkeul_iOSTests */,
 				CA907BE52D3F60A9003833E7 /* Tikkeul_iOSUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA907BF82D3F67E4003833E7 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
