@@ -37,20 +37,42 @@
 		CA907BF72D3F67E4003833E7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CA907C6E2D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Test/Tikkeul_iOSTests/Tikkeul_iOSTests.swift,
+				Test/Tikkeul_iOSUITests/Tikkeul_iOSUITests.swift,
+				Test/Tikkeul_iOSUITests/Tikkeul_iOSUITestsLaunchTests.swift,
+			);
+			target = CA907BC22D3F60A6003833E7 /* Tikkeul_iOS */;
+		};
+		CA907C6F2D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Test/Tikkeul_iOSTests/Tikkeul_iOSTests.swift,
+			);
+			target = CA907BD72D3F60A9003833E7 /* Tikkeul_iOSTests */;
+		};
+		CA907C702D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOSUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Test/Tikkeul_iOSUITests/Tikkeul_iOSUITests.swift,
+				Test/Tikkeul_iOSUITests/Tikkeul_iOSUITestsLaunchTests.swift,
+			);
+			target = CA907BE12D3F60A9003833E7 /* Tikkeul_iOSUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CA907BC52D3F60A6003833E7 /* Tikkeul_iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CA907C6E2D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOS" target */,
+				CA907C6F2D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOSTests" target */,
+				CA907C702D3F6F75003833E7 /* Exceptions for "Tikkeul_iOS" folder in "Tikkeul_iOSUITests" target */,
+			);
 			path = Tikkeul_iOS;
-			sourceTree = "<group>";
-		};
-		CA907BDB2D3F60A9003833E7 /* Tikkeul_iOSTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Tikkeul_iOSTests;
-			sourceTree = "<group>";
-		};
-		CA907BE52D3F60A9003833E7 /* Tikkeul_iOSUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Tikkeul_iOSUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,8 +110,6 @@
 			children = (
 				CA907BF72D3F67E4003833E7 /* .gitignore */,
 				CA907BC52D3F60A6003833E7 /* Tikkeul_iOS */,
-				CA907BDB2D3F60A9003833E7 /* Tikkeul_iOSTests */,
-				CA907BE52D3F60A9003833E7 /* Tikkeul_iOSUITests */,
 				CA907BC42D3F60A6003833E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +163,6 @@
 			dependencies = (
 				CA907BDA2D3F60A9003833E7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				CA907BDB2D3F60A9003833E7 /* Tikkeul_iOSTests */,
-			);
 			name = Tikkeul_iOSTests;
 			packageProductDependencies = (
 				CA907C602D3F6E7D003833E7 /* ComposableArchitecture */,
@@ -166,9 +183,6 @@
 			);
 			dependencies = (
 				CA907BE42D3F60A9003833E7 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CA907BE52D3F60A9003833E7 /* Tikkeul_iOSUITests */,
 			);
 			name = Tikkeul_iOSUITests;
 			packageProductDependencies = (
