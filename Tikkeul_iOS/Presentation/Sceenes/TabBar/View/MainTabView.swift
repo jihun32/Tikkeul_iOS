@@ -20,6 +20,7 @@ struct MainTabView: View {
                     }
             }
         }
+        .tint(.black)
     }
     
     // TODO: - 탭 별 뷰 만들기
