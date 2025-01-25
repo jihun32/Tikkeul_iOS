@@ -10,20 +10,28 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
         TabView {
-            Text("Home")
-                .tabItem {
-                    Label("홈", systemImage: "house")
-                }
-            
-            Text("Chart")
-                .tabItem {
-                    Label("기록", systemImage: "chart.bar.xaxis.ascending")
-                }
-            
-            Text("Setting")
-                .tabItem {
-                    Label("설정", systemImage: "gearShape")
-                }
+            ForEach(TabDestination.allCases, id: \.title) { destination in
+                tabView(destination)
+                    .tabItem {
+                        Label(
+                            destination.title,
+                            systemImage: destination.systemImageName
+                        )
+                    }
+            }
+        }
+    }
+    
+    // TODO: - 탭 별 뷰 만들기
+    @ViewBuilder
+    private func tabView(_ destination: TabDestination) -> some View {
+        switch destination {
+        case .home:
+            Text("home")
+        case .record:
+            Text("record")
+        case .settings:
+            Text("settings")
         }
     }
 }
