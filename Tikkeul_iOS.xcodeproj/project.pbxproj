@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CA907BF82D3F67E4003833E7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CA907BF72D3F67E4003833E7 /* .gitignore */; };
-		CA907C5F2D3F6E5C003833E7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA907C5E2D3F6E5C003833E7 /* ComposableArchitecture */; };
-		CA907C612D3F6E7D003833E7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA907C602D3F6E7D003833E7 /* ComposableArchitecture */; };
-		CA907C632D3F6E91003833E7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA907C622D3F6E91003833E7 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA907C5F2D3F6E5C003833E7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA907C612D3F6E7D003833E7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA907C632D3F6E91003833E7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,14 +132,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				CA907C882D3F7E4F003833E7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CA907BC52D3F60A6003833E7 /* Tikkeul_iOS */,
 			);
 			name = Tikkeul_iOS;
 			packageProductDependencies = (
-				CA907C5E2D3F6E5C003833E7 /* ComposableArchitecture */,
 			);
 			productName = Tikkeul_iOS;
 			productReference = CA907BC32D3F60A6003833E7 /* Tikkeul_iOS.app */;
@@ -166,7 +158,6 @@
 			);
 			name = Tikkeul_iOSTests;
 			packageProductDependencies = (
-				CA907C602D3F6E7D003833E7 /* ComposableArchitecture */,
 			);
 			productName = Tikkeul_iOSTests;
 			productReference = CA907BD82D3F60A9003833E7 /* Tikkeul_iOSTests.xctest */;
@@ -187,7 +178,6 @@
 			);
 			name = Tikkeul_iOSUITests;
 			packageProductDependencies = (
-				CA907C622D3F6E91003833E7 /* ComposableArchitecture */,
 			);
 			productName = Tikkeul_iOSUITests;
 			productReference = CA907BE22D3F60A9003833E7 /* Tikkeul_iOSUITests.xctest */;
@@ -226,8 +216,6 @@
 			mainGroup = CA907BBA2D3F60A6003833E7;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				CA907C862D3F72B6003833E7 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CA907BC42D3F60A6003833E7 /* Products */;
@@ -300,10 +288,6 @@
 			isa = PBXTargetDependency;
 			target = CA907BC22D3F60A6003833E7 /* Tikkeul_iOS */;
 			targetProxy = CA907BE32D3F60A9003833E7 /* PBXContainerItemProxy */;
-		};
-		CA907C882D3F7E4F003833E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = CA907C872D3F7E4F003833E7 /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -443,6 +427,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,6 +457,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,48 +583,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.17.1;
-			};
-		};
-		CA907C862D3F72B6003833E7 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.58.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CA907C5E2D3F6E5C003833E7 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
-		};
-		CA907C602D3F6E7D003833E7 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
-		};
-		CA907C622D3F6E91003833E7 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA907C5D2D3F6E5C003833E7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
-		};
-		CA907C872D3F7E4F003833E7 /* SwiftLintBuildToolPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA907C862D3F72B6003833E7 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
-			productName = "plugin:SwiftLintBuildToolPlugin";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA907BBB2D3F60A6003833E7 /* Project object */;
 }
